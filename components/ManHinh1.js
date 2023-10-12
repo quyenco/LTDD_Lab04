@@ -18,6 +18,7 @@ export default function ManHinh1() {
     { User: "huu", pw: "135792468" },
   ];
   
+  const [loginState, setLoginState] = useState();
 
   return (
     <View style={styles.container}>
@@ -28,6 +29,8 @@ export default function ManHinh1() {
           style={{ height: "100%", paddingLeft: 10, width: "100%" }}
           placeholder="Name"
           placeholderTextColor={"black"}
+          returnKeyType='next'//khi nhấn enter sẽ sang trường tiếp theo,
+          autoCorrect= {false}
         ></TextInput>
       </View>
       <View style={styles.input}>
@@ -35,6 +38,9 @@ export default function ManHinh1() {
         <TextInput
           style={{ height: "100%", paddingLeft: 10, width: "100%" }}
           placeholder="Password"
+          returnKeyType="go"
+          autoCorrect={false}
+          secureTextEntry // ẩn chữ đã nhập
         ></TextInput>
         <EyeFilled style={{ fontSize: 35, paddingRight: 10 }}></EyeFilled>
       </View>

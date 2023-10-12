@@ -11,10 +11,12 @@ import {
 } from "react-native";
 
 import ManHinh1 from "./components/ManHinh1";
+import ManHinh2 from "./components/ManHinh2";
 
 export default function App() {
   return(
-    <ManHinh1></ManHinh1>
+    // <ManHinh1></ManHinh1>
+    <ManHinh2></ManHinh2>
   );
 }
 
